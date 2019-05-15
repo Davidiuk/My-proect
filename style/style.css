@@ -1,0 +1,322 @@
+body {
+    font-family: 'Neucha', cursive;
+    font-size: 15px;
+    color: #859DFC;
+    line-height: 1.5;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin:0
+}
+hr {
+    margin: 40px auto;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 102vh;
+    background: url('../asses/images/Intro.jpg') center;
+    background-size: cover;
+}
+.intro__inner {
+   width: 100%;
+   max-width: 800px;
+   margin:0 auto;
+   text-align: center;
+}
+.intro__suptitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    color: #fff;
+    line-height: 2.5;
+    opacity: 0.7;
+}
+.intro__title {
+    font-size: 150px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 0.8;
+    opacity: 0.7;
+}
+.intro__title:after {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    margin: 60px auto 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+ 
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+
+    padding: 5px 25px;
+    border: 3px solid #fff;
+    margin-top: 40px;
+    transition: .2s linear;
+}
+
+.btn:hover {
+    transition:  .2s linear;
+    border: 3px solid #fff;
+    background-color: #FCE38A;
+    color: #fff;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+} 
+.header__logo {
+    font-family: 'Monoton', cursive;
+    font-size: 30px;
+    color: #fff;
+}
+.nav {
+    font-size: 20px;
+}
+.nav__link {
+    vertical-align: top;
+    display: inline-block;
+    margin: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s linear;
+    position: relative;
+}
+.nav__link:after {
+     position: absolute;
+    opacity: 0;
+    display: none;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #FCE38A;
+    transition: .2s linear;
+
+}
+.nav__link:hover {
+    transition: .2s linear;
+    color: #FCE38A;
+}
+.nav__link:hover:after {
+    opacity: 1;
+    display: block;
+    transition: .2s linear;
+}
+
+.slider { 
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ right: 0;
+
+ z-index: 1000;
+}
+
+.slider__item {
+    width: 23%;
+    color: #fff;
+    font-weight: 700;
+
+    border-top: 3px solid #fff;
+}
+
+.slider b {
+    font-size: 25px;
+}
+
+.slider__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    padding-top: 65px;
+}
+.section--devices {
+    background: url(/asses/images/Treee.jpg) center no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+    padding-bottom: 0;
+}
+.section_header {
+   text-align: center;
+}
+.section_header:after {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #F38181;
+
+    margin: 25px auto;
+}
+
+.section__title {
+    font-family: 'Monoton', cursive;
+    font-size: 18px;
+    color: black;
+}
+
+.section__suptitle {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.section_text {
+    margin: 0 160px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+.albom {
+    padding-top: 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistics {
+    background-color: #95E1D3;
+}
+.statistic__inner {
+    display: flex;
+    margin-top: 100px;
+}
+
+.statistics_sub {
+    flex: 1 1 0;
+    padding: 70px 25px;
+
+    border-left: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.statistics_in {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.section__inner {
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+}
+
+.section2 {
+    font-size: 18px;
+    font-family: 'Monoton', cursive;
+}
+.section3 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.section__inner:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    background-color: #F38181;
+
+    margin: 30px auto;
+}
+
+.servis {
+    display: flex;
+ margin: 40px auto;
+}
+.servis_item {
+    flex: 1 1 0; /*Будут занимать одинаковое количество места*/
+    padding-left: 70px;
+    top: 4px;
+    position: relative;
+}
+
+.servis_title {
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.servis_img {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 4px;
+    z-index: 1;
+}
+
+.devisec {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; 
+    position: relative;
+}
+
+.devisec_item {
+    display: block;
+    padding-top: 25px;
+}
+
+.devices__item--iphone {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    z-index: 100;
+}
+.section__inner2 {
+    text-align: center;
+    margin-top: -30px;
+    color: black;
+}
+.section__inner2:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    background-color: #F38181;
+    margin: 35px auto;
+}
+
+.section__inner2 {
+    text-align: center;
+    margin-top: -30px;
+    color: black;
+}
